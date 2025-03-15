@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from app.core.database import get_db
 from app.schemas.signal import Signal, SignalCreate
 from app.services.signal_generator import SignalGenerator
+from fastapi.middleware.cors import CORSMiddleware
 
 router = APIRouter()
 
